@@ -13,21 +13,19 @@ import com.udacity.shoestore.utils.navigateSafe
 
 class WelcomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentWelcomeBinding
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(
+        val binding: FragmentWelcomeBinding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_welcome,
             container,
             false
         )
-        binding.buttonLogin.setOnClickListener {
-            navigateSafe(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment()) // Use WelcomeFragmentDirections here
+        binding.InstructionsButton.setOnClickListener {
+            navigateSafe(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment())
         }
 
         return binding.root

@@ -25,7 +25,9 @@ class LoginFragment : Fragment() {
         binding.buttonLogin.setOnClickListener {
             navigateSafe(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
-        binding.
+        binding.buttonSignUp.setOnClickListener {
+            navigateSafe(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+        }
 
         return binding.root
     }
