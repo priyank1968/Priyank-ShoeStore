@@ -23,6 +23,9 @@ class InstructionsFragment : Fragment() {
             container,
             false
         )
+        binding.shoeListButton.setOnClickListener{
+            navigateSafe(InstructionsFragmentDirections.actionInstructionsFragmentToShoesListFragment2())
+        }
         return binding.root
     }
 

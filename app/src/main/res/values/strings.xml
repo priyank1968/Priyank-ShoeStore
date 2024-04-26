@@ -14,4 +14,16 @@
     <string name="instructions_title">Instuctions!</string>
     <string name="instructions_body">Instructions body</string>
     <string name="show_shoes_button">Show shoes</string>
+    <string name="add_shoes_button">Add shoes button</string>
+    <string name="logout">Logout</string>
+    <string name="shoe_company">Company: %s</string>
+    <string name="shoe_size">Shoe size: %.1f</string>
+    <string name="shoe_description">Description: %s</string>
+    <string name="shoe_company_tv">Company</string>
+    <string name="shoe_name_tv">Shoe name</string>
+    <string name="shoe_size_tv">Shoe size</string>
+    <string name="shoe_description_tv">Shoe description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="empty_fields_warning">Empty fields found</string>
 </resources>

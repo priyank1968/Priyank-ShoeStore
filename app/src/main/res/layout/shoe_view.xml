@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/default_margin">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/shoe_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{shoe.name}"
+            tools:text="Shoe name" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/double_margin"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoe_name">
+
+            <ImageView
+                android:id="@+id/shoe_image"
+                android:layout_height="@dimen/shoe_image_height"
+                android:layout_width="@dimen/shoe_image_width"
+                app:srcCompat="@mipmap/sample_shoe" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/shoe_size"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@{@string/shoe_size(shoe.size)}"
+                    tools:text="Size: 42" />
+
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/shoe_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/shoe_company"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@{@string/shoe_company(shoe.company)}"
+                    tools:text="Company: Mike" />
+
+                <TextView
+                    app:layout_constraintTop_toBottomOf="@id/shoe_company"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/shoe_description"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="@{@string/shoe_description(shoe.description)}"
+                    tools:text="Description: text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <View
+            android:background="@color/secondColor"
+            android:id="@+id/divider"
+            android:layout_height="1dp"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

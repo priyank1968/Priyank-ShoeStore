@@ -10,5 +10,7 @@
     <dimen name="octa_margin">64dp</dimen>
     <dimen name="nona_margin">72dp</dimen>
     <dimen name="deca_margin">80dp</dimen>
+    <dimen name="shoe_image_height">100dp</dimen>
+    <dimen name="shoe_image_width">100dp</dimen>
 
 </resources>
