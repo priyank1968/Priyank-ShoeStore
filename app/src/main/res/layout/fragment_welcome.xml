@@ -39,7 +39,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="@dimen/deca_margin"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/button_drawable"
+            style="@style/buttonStyle"
             android:text="@string/instructions"
             app:layout_constraintEnd_toEndOf="@id/guideline_right"
             app:layout_constraintStart_toStartOf="@id/guideline_left"

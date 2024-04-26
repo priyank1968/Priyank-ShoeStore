@@ -34,12 +34,12 @@
 
         <Button
             android:id="@+id/shoe_list_button"
+            style="@style/buttonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="@dimen/deca_margin"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/button_drawable"
             android:text="@string/show_shoes_button"
             app:layout_constraintEnd_toEndOf="@id/guideline_right"
             app:layout_constraintStart_toStartOf="@id/guideline_left"
@@ -69,8 +69,8 @@
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_Bottom"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.90" />
 

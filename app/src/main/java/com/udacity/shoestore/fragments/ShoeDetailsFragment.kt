@@ -30,6 +30,8 @@ class ShoeDetailsFragment : Fragment() {
             false
         )
         detailViewModel = ViewModelProvider(this)[ShoeDetailsViewModel::class.java]
+        binding.viewModel = detailViewModel
+        binding.lifecycleOwner = this
 
         binding.buttonCancel.setOnClickListener { navigateSafe(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoesListFragment()) }
 

@@ -20,4 +20,9 @@
         <item name="android:background">@drawable/edit_text_drawable</item>
     </style>
 
+    <style name="buttonStyle">
+        <item name="android:background">@drawable/button_drawable</item>
+        <item name="android:textColor">@color/thirdColor</item>
+    </style>
+
 </resources>
